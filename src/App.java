@@ -55,7 +55,7 @@ public class App {
 				break;
 			} else if(input2 == 2) {
 				x.time = 30;
-				for(int i=0; i<=x.time; i++) {
+				for(int i=0; i<=30; i++) {
 					try {
 						x.Object();
 						x.time--;
@@ -65,7 +65,7 @@ public class App {
 				break;
 			} else if(input2 == 3) {
 				x.time = 60;
-				for(int i=0; i<=x.time; i++) {
+				for(int i=0; i<=60; i++) {
 					try {
 						x.Object();
 						x.time--;
@@ -75,7 +75,7 @@ public class App {
 				break;
 			} else if(input2 == 4) {
 				x.time = 90;
-				for(int i=0; i<=x.time; i++) {
+				for(int i=0; i<=90; i++) {
 					try {
 						x.Object();
 						x.time--;
@@ -85,7 +85,7 @@ public class App {
 				break;
 			} else if(input2 == 5) {
 				x.time = 150;
-				for(int i=0; i<=x.time; i++) {
+				for(int i=0; i<=150; i++) {
 					try {
 						x.Object();
 						x.time--;
@@ -95,7 +95,7 @@ public class App {
 				break;
 			} else if(input2 == 6) {
 				x.time = 180;
-				for(int i=0; i<=x.time; i++) {
+				for(int i=0; i<=180; i++) {
 					try {
 						x.Object();
 						x.time--;
