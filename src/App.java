@@ -17,21 +17,21 @@ public class App {
 		//3.각 메뉴에 맞게 작동 (if문 사용이유: 여러 선택지 중 한개를 선택하려고, while문 사용이유: 선택지 중 하나를 선택할 때까지 반복하려고)
 		while(true) {
 			if(input1 == 1) {
-				x.heat = "@ @ @ @";
+				x.weakHeat();
 				x.Object();
 				break;
 			} else if (input1 == 2) {
-				x.heat = "@@@@@@@";
+				x.strongHeat();
 				x.Object();
 				break;
 			} else if (input1 == 3) {
-				x.heat = "@@@@@@@";
-				x.winds = "~ ~ ~";
+				x.weakHeat();
+				x.weakWind();
 				x.Object();
 				break;
 			} else if (input1 == 4) {
-				x.heat = "@@@@@@@";
-				x.winds = "~~~~~";
+				x.strongHeat();
+				x.strongWind();
 				x.Object();
 				break;
 			} else {
@@ -57,8 +57,9 @@ public class App {
 				x.time = 30;
 				for(int i=0; i<=30; i++) {
 					try {
+						x.movingWind();
 						x.Object();
-						x.time--;
+						x.timeDown();
 						Thread.sleep(1000);						
 					} catch(InterruptedException e) { }
 				}
@@ -67,8 +68,9 @@ public class App {
 				x.time = 60;
 				for(int i=0; i<=60; i++) {
 					try {
+						x.movingWind();
 						x.Object();
-						x.time--;
+						x.timeDown();
 						Thread.sleep(1000);						
 					} catch(InterruptedException e) { }
 				}
@@ -77,8 +79,9 @@ public class App {
 				x.time = 90;
 				for(int i=0; i<=90; i++) {
 					try {
+						x.movingWind();
 						x.Object();
-						x.time--;
+						x.timeDown();
 						Thread.sleep(1000);						
 					} catch(InterruptedException e) { }
 				}
@@ -87,8 +90,9 @@ public class App {
 				x.time = 150;
 				for(int i=0; i<=150; i++) {
 					try {
+						x.movingWind();
 						x.Object();
-						x.time--;
+						x.timeDown();
 						Thread.sleep(1000);						
 					} catch(InterruptedException e) { }
 				}
@@ -97,8 +101,9 @@ public class App {
 				x.time = 180;
 				for(int i=0; i<=180; i++) {
 					try {
+						x.movingWind();
 						x.Object();
-						x.time--;
+						x.timeDown();
 						Thread.sleep(1000);						
 					} catch(InterruptedException e) { }
 				}
